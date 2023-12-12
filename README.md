@@ -29,17 +29,17 @@ Without specifying the output directory you can preview the message selection.
 
 With i.e. `--skip "Name|Other|Signal"` you can exclude all full names matching
 the expression case sensitive. Use quotes with `|` or ` `.
-Matches are marked with `-`.
+Matches are marked with `-` in message overview.
 
 With i.e. `--only Familyname` you can limit the exports to only matches.
-Matches are marked with '*'.
+Matches are marked with `*` in message overview.
 
 Combine `--skip` to exclude from `--only` matches.
 
 
 ## Output formats and limit file size
 
-Supported formats are:
+Supported `--format`s are:
 - html (default)
 - md i.e. for Nextcloud (gets slow on longer conversations and no images in app)
 - csv `;`-separated utf-8 file (use `--bom` on Windows) attachments only as link
